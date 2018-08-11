@@ -810,6 +810,9 @@ margin: auto;}
  /*الشاشة الصغيرة*/
  @media (max-width: 768px)
  {
+    .sub-header{
+        z-index: 0;
+    }
     .content-news p{display: none;}
     .img-right-home{
         min-height: 150px;
