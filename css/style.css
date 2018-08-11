@@ -254,11 +254,20 @@ ul.list-social-icons a i{
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    z-index: 99;
+    z-index: 0;
     background-position: center;
 
 }
-
+.btn-success {
+    color: #fff;
+    background-color: #ff9d30;
+    border-color: #ff9d30;
+}
+.btn-success:hover {
+    color: #fff;
+    background-color: #f98505;
+    border-color: #f98505;
+}
 .img-right-home::before {
     content: '';
     display: block;
