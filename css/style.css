@@ -819,6 +819,9 @@ margin: auto;}
  /*الشاشة الصغيرة*/
  @media (max-width: 768px)
  {
+    .content-dt .albume-item .img-content{
+        height: 220px;
+    }
     .sub-header{
         z-index: 0;
     }
