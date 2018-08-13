@@ -134,12 +134,15 @@
                     <form>
                             <div class="form-group">
                                     <label for="exampleFormControlInput1">الاسم</label>
-                                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
-                            </div>
+                                    <input type="text"  required class="form-control  is-invalid" id="exampleFormControlInput1" placeholder="">
+                                    <div class="invalid-feedback">
+                                           يجب ادخال الاسم بشكل صحيح
+                                          </div>
+                                </div>
                                   
                             <div class="form-group">
                               <label for="exampleFormControlInput2">البريد الالكتروني</label>
-                              <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="">
+                              <input type="email"  required class="form-control" id="exampleFormControlInput2" placeholder="">
                             </div>
                             <div class="form-group">
                                     <label for="exampleFormControlInput3">رقم الجوال</label>
@@ -151,7 +154,7 @@
                             </div>
                             <div class="form-group">
                                     <label for="exampleFormControlSelect1">كيان العميل</label>
-                                    <select class="form-control" id="exampleFormControlSelect1">
+                                    <select class="form-control"  required id="exampleFormControlSelect1">
                                       <option>فرد</option>
                                       <option>مؤسسة</option>
                                       <option>شركة</option>

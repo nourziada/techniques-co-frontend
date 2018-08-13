@@ -329,6 +329,12 @@ padding: 15px;
 .services .content-left-home{
     background: #3495a8;
 }
+.services .btn-primary{
+    background-color: #3495a8;
+}
+.services .btn .hover{
+    background: #11849a;
+}
 .content-left-home h2{
     font-size: 25px;
     border-right: 2px solid #fff;
@@ -836,6 +842,9 @@ margin: auto;}
  /*الشاشة الصغيرة*/
  @media (max-width: 768px)
  {
+    .sub-header h1 span::before , .sub-header h1 span::after{
+        display: none;
+    }
     ul.list-contactus{
         overflow: initial;
     }
