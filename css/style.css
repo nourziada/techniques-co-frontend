@@ -63,7 +63,7 @@ html, body {
 	overflow-x:hidden;
 }
 body{
-    background: url('../img/background.jpg') fixed center no-repeat;
+    background:#fff;
     background-size: cover;
 }
 a:hover{
@@ -111,7 +111,7 @@ ul.list-contactus li span{
 }
 .box-shdow{
     background: #f8f8f8 ;
-    box-shadow: #ccc 0px 0px 9px 0px;
+    /* box-shadow: #ccc 0px 0px 9px 0px; */
     padding: 0 15px;
     position: relative;
 }
