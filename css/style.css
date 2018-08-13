@@ -255,9 +255,9 @@ ul.list-social-icons a i{
 }
 .logo-top{
     position: absolute;
-    left: 25px;
-    top: 25px;
-    width: 100px;
+    left: 15px;
+    top: 15px;
+    width: 120px;
     z-index: 999999;
 }
 
