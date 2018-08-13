@@ -260,7 +260,10 @@ ul.list-social-icons a i{
     width: 120px;
     z-index: 999999;
 }
-
+.custom-pagention{
+    margin: auto !important;
+    direction: ltr;
+}
 /* section-tow home */
 .img-right-home{
     background: url(../img/aboutus.jpg) center;
