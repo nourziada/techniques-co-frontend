@@ -260,6 +260,9 @@ ul.list-social-icons a i{
     width: 120px;
     z-index: 999999;
 }
+.logo-top a{
+    display: block;
+}
 .custom-pagention{
     margin: auto !important;
     direction: ltr;
@@ -810,11 +813,9 @@ margin: auto;}
         left: 0;
         right: 0;
         margin: auto;
-        top: 10px;
+        top: 3px;
     }
-    .list-custome ul li a span{
-        display: none;
-    }
+  
     .translaite-menu{
         top: 74px;
         right: 0;
@@ -842,6 +843,9 @@ margin: auto;}
  /*الشاشة الصغيرة*/
  @media (max-width: 768px)
  {
+    .logo-top{
+        width: 100px;
+    }
     .sub-header h1 span::before , .sub-header h1 span::after{
         display: none;
     }
@@ -869,6 +873,7 @@ margin: auto;}
         display: block;
         transition: 0.3s all;
         background: rgba(0, 0, 0, 0.87);
+        margin-top: 55px;
     }
     .list-custome ul li{
         width: 100%;
