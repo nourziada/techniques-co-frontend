@@ -269,7 +269,7 @@ ul.list-social-icons a i{
 }
 /* section-tow home */
 .img-right-home{
-    background: url(../img/aboutus.jpg) center;
+    background: url(../img-n/background.jpg) center;
     background-size: cover;
     background-repeat: no-repeat;
     background-size: cover;
@@ -287,6 +287,22 @@ ul.list-social-icons a i{
     color: #fff;
     background-color: #f98505;
     border-color: #f98505;
+}
+.home .img-right-home::before{
+    background: rgba(80, 79, 79, 0.7);
+}
+.logo-home-about{
+    height: 150px;
+    z-index: 9999;
+    position: absolute;
+    width: 50%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    right: 0;
+    left: 0;
+    margin: auto;
+    top: calc(50% - 75px);
 }
 .img-right-home::before {
     content: '';
@@ -357,6 +373,26 @@ padding: 15px;
 /* section three home */
 .section-three{
 
+}
+.servicess{
+    padding: 40px;
+    font-size: 13px;
+    color: #fff;
+    line-height: 1.4;
+}
+.servicess:nth-child(2){
+    color: #3495a8;
+}
+.servicess:nth-child(1) {
+    background: #3495a8;
+}
+.servicess:nth-child(3)
+{
+    background: #414242;
+}
+.servicess h2.title{
+font-size: 18px;
+margin-bottom: 12px;
 }
 .news-slider{position: relative;padding: 0;}
 .news-slider .slick-prev , .news-slider .slick-next{ 
