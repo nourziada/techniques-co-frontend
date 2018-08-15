@@ -289,7 +289,7 @@ ul.list-social-icons a i{
     border-color: #f98505;
 }
 .home .img-right-home::before{
-    background: rgba(80, 79, 79, 0.7);
+    background: rgba(80, 79, 79, 0);
 }
 .logo-home-about{
     height: 150px;
