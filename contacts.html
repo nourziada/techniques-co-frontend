@@ -130,7 +130,7 @@
     <!-- star row section-two -->
     <div class="row">
             <div class="col-md-6 col-sm-4  contact-us-form">
-                    <form>
+                    <form id="demo-form">
                             <div class="form-group">
                                     <label for="exampleFormControlInput1">الاسم</label>
                                     <input type="text" class="form-control" id="exampleFormControlInput1" required placeholder="">
@@ -206,8 +206,7 @@
 </div>
 </div>
     <script src="js/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    
     <script src="js/bootstrap.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script>
@@ -226,6 +225,19 @@
     <script src="js/wow.min.js"></script>
     <script>
         new WOW().init();
-    </script>       
+    </script>  
+    <script src="js/parsley.js"></script>
+    <script type="text/javascript">
+        $(function () {
+          $('#demo-form').parsley().on('field:validated', function() {
+            var ok = $('.parsley-error').length === 0;
+            $('.bs-callout-info').toggleClass('hidden', !ok);
+            $('.bs-callout-warning').toggleClass('hidden', ok);
+          })
+          .on('form:submit', function() {
+            return false; // Don't submit form for this demo
+          });
+        });
+        </script>     
 </body>
 </html>

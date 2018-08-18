@@ -131,7 +131,7 @@
     <div class="row">
         <div class="col-md-3"></div>
             <div class="col-md-6 col-sm-4  contact-us-form">
-                    <form>
+                    <form id="form">
                             <div class="form-group">
                                     <label for="exampleFormControlInput1">الاسم</label>
                                     <input type="text"  required class="form-control  is-invalid" id="exampleFormControlInput1" placeholder="">
@@ -268,7 +268,7 @@
                 $('[data-toggle="tooltip"]').tooltip(); 
             });
             </script>
-    <script src="js/js.js"></script>
+
     <!-- <script type="text/javascript" src="dist/skrollr.min.js"></script>
     <script src="js/jquery.nicescroll.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
@@ -279,6 +279,20 @@
     <script src="js/wow.min.js"></script>
     <script>
         new WOW().init();
-    </script>       
+    </script>   
+        <script src="js/parsley.js"></script>
+        <script type="text/javascript">
+            $(function () {
+              $('#form').parsley().on('field:validated', function() {
+                var ok = $('.parsley-error').length === 0;
+                $('.bs-callout-info').toggleClass('hidden', !ok);
+                $('.bs-callout-warning').toggleClass('hidden', ok);
+              })
+              .on('form:submit', function() {
+                return false; // Don't submit form for this demo
+              });
+            });
+            </script>       
+                <script src="js/js.js"></script>
 </body>
 </html>
